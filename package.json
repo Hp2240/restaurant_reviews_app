@@ -4,7 +4,8 @@
   "description": "## u2_resaurant_reviews_app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Hp2240/restaurant_reviews_app/issues"
   },
-  "homepage": "https://github.com/Hp2240/restaurant_reviews_app#readme"
+  "homepage": "https://github.com/Hp2240/restaurant_reviews_app#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
