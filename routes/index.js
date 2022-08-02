@@ -1,9 +1,13 @@
 const { Router } = require('express')
-const controllers = require('../controllers')
+const { restaurants, reviews } = require('../controllers')
 const router = Router()
 
-router.get('/restaurants', controllers.getAllRestaurants)
-router.post('/restaurants', controllers.createRestaurant)
-router.get('/restaurants/:id', controllers.getOneRestaurant)
+// restaurant routes
+router.get('/restaurants', restaurants.getAllRestaurants)
+router.post('/restaurants', restaurants.createRestaurant)
+router.get('/restaurants/:id', restaurants.getOneRestaurant)
+
+// review routes
+router.get('/reviews', reviews.getAllReviews)
 
 module.exports = router
