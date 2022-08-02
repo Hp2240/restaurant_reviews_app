@@ -10,7 +10,6 @@ router.post('/restaurants/:id/reviews', reviews.createReview)
 
 // review routes
 router.get('/reviews', reviews.getAllReviews)
-router.post('/reviews', reviews.createReview)
 router.get('/reviews/:id', reviews.getReview)
 router.put('/reviews/:id', reviews.updateReview)
 router.delete('/reviews/:id', reviews.deleteReview)
