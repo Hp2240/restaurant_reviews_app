@@ -10,6 +10,7 @@ router.get('/restaurants/:id', restaurants.getOneRestaurant)
 // review routes
 router.get('/reviews', reviews.getAllReviews)
 router.get('/reviews', reviews.createReview)
-router.get('/reviews', reviews.getReview)
+router.get('/reviews/:id', reviews.getReview)
+router.get('/reviews/:id', reviews.updateReview)
 
 module.exports = router
