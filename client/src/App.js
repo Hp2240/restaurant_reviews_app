@@ -13,7 +13,7 @@ import { BASE_URL } from './globals'
 // import { restaurants } from '../../controllers'
 
 const App = () => {
-  const [restaruants, setRestaurants] = useState([])
+  const [restaurants, setRestaurants] = useState([])
 
   useEffect(() => {
     const getRestaurants = async () => {
@@ -32,8 +32,8 @@ const App = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route
-            path="/restaruants"
-            element={<RestaurantList restarants={restaurants} />}
+            path="/restaurants"
+            element={<RestaurantList restaurants={restaurants} />}
           />
           {/* <Route path="/add" element={<RestaurantForm />} /> */}
           <Route path="/review/:id" element={<ReviewDetails />} />
